@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Cadastro de Cliente</h2>
+        <form action="/submit" method="post">
+            <label for="produto">Produto:</label>
+            <input type="text" id="produto" name="produto" required title="Preencha este campo">
+            
+            <label for="descricao">Descrição:</label>
+            <input type="text" id="descricao" name="descricao" title="Preencha este campo">
+            
+            <label for="marca">Marca:</label>
+            <input type="text" id="marca" name="marca" required title="Preencha este campo">
+
+            <label for="quant">Quantidade:</label>
+            <input type="number" id="quant" name="quant" title="Preencha este campo" min="1">
+            
+            <label for="preco">Preço:</label>
+            <input type="number" id="preco" name="preco" title="Preencha este campo" min="1">
+            
+            <button type="submit">Cadastrar</button>
+        </form>
+    </div>
+    
+</body>
+</html>
